@@ -1,0 +1,255 @@
+---
+title: "RMarkdown 101"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+## Introduction & Setup
+
+Hi class! This is a HTML output of an R Markdown document. To get started on using R Markdown, make sure that you install the *`rmarkdown`* package.
+
+```{r install, eval=FALSE}
+install.packages("rmarkdown")
+```
+
+## Getting started with R Markdown
+
+To create an R Markdown (.rmd file), go to **File \> New File \> R Markdown** OR simply click the little down arrow shown in the screenshot below.
+
+![](images/markdown1.png)
+
+A pop-up window will appear and you can enter in your desired information (Title, Author, Date) and settings. For this course, please select **HTML** as the Default Output Format.
+
+### Setting up your HTML output
+
+**YAML - Yet Another Markup Language**
+
+The first customisable option for RMarkdown files is the metadata, which is the top most portion of your RMarkdown code.
+
+You can also recognise it as the part that is written between a pair of **three dashes**. When you create a new RMarkdown file, it usually looks like this:
+
+```{r YAML1, eval = FALSE}
+---
+title: "Assignment"
+author: "Xin Rui"
+date: "2022-08-16"
+output: html_document
+---
+```
+
+What you see above is using the YAML syntax, which you can customise. For example, the metadata below does three things:
+
+1.  Creates an option to show/hide your code in the HTML output
+
+2.  Inserts a table of contents that is always on the left panel when scrolling through the HTML output
+
+3.  Creates a HTML output with the *flatly* theme.
+
+```{r YAML2, eval = FALSE}
+---
+title: "Assignment"
+author: "Xin Rui"
+date: "2022-08-16"
+output: 
+  html_document:
+    code_folding: show
+    toc: true
+    toc_float: true
+    theme: flatly
+---
+```
+
+### Code chunks and changing chunk options
+
+Code chunks, as the name suggests, are where you insert your codes. You can insert chunks into your markdown file with the keyboard shortcut **Ctrl + Alt + I** (Mac: **Cmd + Option + I**).
+
+You can customise the options in your chunks to show/hide the information that is shown in your code. For instance, we normally hide the "messages" and "warnings" in the output since that does not value add to what you want to show.
+
+As it will be madness to customise the options of every single chunk in your file, you can create a general setup chunk at the top of your file, with this code:
+
+```{r chunk1, eval = FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE) 
+# hides messages & warnings
+```
+
+This then sets the chunk options for every subsequent chunk in your file. If you would like to customise each individual chunk for a specific purpose, you will need to include that in the top section of that chunk (i.e. the section between the {}).
+
+Here are some commonly used options and what they do:
+
+-   Adjust figure dimensions: *`fig.height = "value"; fig.width = "value"`*
+-   Include figure caption: *`fig.cap = "caption"`*
+-   Shows code but does not run it: *`eval = FALSE`* (default is TRUE)
+
+You can add labels to your code chunks to identify them, especially when its very easy to get lost in a lengthy document with loads of codes. Just remember that you cannot have two or more chunks with the same label \>\> This will cause an error when knitting your file.
+
+As a good practice, test run each chunk to make sure your codes are working before knitting the entire file.
+
+### Markdown Syntax
+
+The text in a Markdown is written with the Markdown syntax (i.e. Pandoc's Markdown). Using the syntax allows us to format our text. Check out the examples below:
+
+-   **BOLD**: pair of double asterisks (\*\*)
+-   *italics*: pair of underscores or asterisks (\* or \_)
+
+Headers are defined using the (#) sign, and can be used to create your table of contents.
+
+```{r header}
+
+# First-level header
+
+## Second-level header
+
+### Third-level header
+
+```
+
+The **R Markdown Cheat Sheet**, which is accessible through RStudio (Help \> Cheat Sheets), provides a list of commonly used syntax and other useful resources. Check out the links in the **Useful Resources** section too!
+
+## Understanding the Data - A Penguin🐧 Example
+
+**Load packages & read dataset**
+
+```{r libraries}
+library(tidyverse)
+library(palmerpenguins)
+library(ggfortify)
+
+data(penguins)
+```
+
+### View data
+
+To understand your given data set, it's good practice to know what variables are included and the types of variables (e.g. continuous, categorical) you are dealing with. Here are some basic codes.
+
+```{r view1}
+head(penguins) # view first 6 rows of data
+```
+
+*`head()`* gives you a quick snapshot of your data as only the first 6 rows are presented. If you would like to see the entire dataset, you can run *`View()`*.
+
+```{r view2}
+str(penguins) # view data structure
+summary(penguins) # view mean, min, max etc of each variable
+```
+
+*`str()`* and *`summary()`* are a really useful functions that tell you the types of variables and provides descriptive statistics for each variable. Now we know that this is a dataset of body measurements and traits of 3 different penguin species, collected from 3 different islands.
+
+### Data Exploration
+
+**Q. Does body mass differ among the three penguin species?**
+
+*Graphing your data*
+
+Let's use a histogram to visualise the spread of body mass among the three penguin species.
+
+```{r plot_explore}
+penguins %>% ggplot() +
+                # Set aesthetics (x, y, fill)
+                geom_histogram(aes(x = body_mass_g,
+                                   fill = species),
+                               alpha = 0.5) +
+                # Split the graph by species
+                facet_grid(rows = vars(species)) +
+                # Format axis labels
+                labs(x = "Body Mass (g)", y = "Count") +
+                # Add colours manually
+                scale_fill_manual(values = c("darkorange",
+                                             "purple",
+                                             "cyan4")) +
+                # Set plot theme
+                theme_minimal() +
+                # Remove legend
+                theme(legend.position = "none")
+
+```
+
+From the histogram, we noticed that there is a difference in body mass among the three species and the spread of data for each species is not skewed.
+
+*Showing the numbers.*
+
+```{r mass}
+# Using dplyr functions
+penguins_summary <- 
+  penguins %>% 
+     group_by(species) %>%
+     summarise(count = n(),
+               mean = mean(body_mass_g, na.rm = TRUE),
+               ssd = sd(body_mass_g, na.rm = TRUE)) %>%
+     mutate(se = ssd / sqrt(count),
+            lower_ci = mean - qt(1 - (0.05 / 2), count - 1) * se,
+            upper_ci = mean + qt(1 - (0.05 / 2), count - 1) * se)
+
+# Nice table output
+knitr::kable(penguins_summary)
+```
+
+*Choosing the final plot*
+
+Since our data is not skewed, we can show the difference in means and confidence intervals of the body mass among the three penguin species.
+
+Instead of a boxplot (which shows the median and quartiles), we plot the means and confidence intervals:
+
+```{r plot}
+penguins_summary %>% ggplot() +
+                geom_point(aes(x = species, y = mean,
+                               colour = species),
+                           size = 3) +
+                geom_errorbar(aes(x = species,
+                                  ymin = lower_ci,
+                                  ymax = upper_ci,
+                                  colour = species),
+                              width = 0.2, size = 1) +
+                labs(x = "Species", y = "Body Mass (g)",) +
+                scale_colour_manual(values = c("darkorange",
+                                             "purple",
+                                             "cyan4")) +
+                theme_minimal() +
+                theme(legend.position = "none")
+```
+
+And there you have it! Bear in mind that effective data visualisation is just one part of presenting your results and you'll need to also think about choosing the right plots depending on what analyses you used. We will be covering this throughout the course - so stay tuned! 😎
+
+## Useful Resources
+
+There's a huge variety of available resources on using RStudio & R Markdown and one can easily get lost in this deep rabbit hole. Here is a list of our recommended resources to get you started. We highly recommend going through at least the resources in **bold**. 😄
+
+***Installing R & RStudio***
+
+-   [**https://www.rstudio.com/products/rstudio/download/#download**](https://www.rstudio.com/products/rstudio/download/#download){.uri}
+
+***Updating R, RStudio & packages***
+
+-   [**https://www.linkedin.com/pulse/3-methods-update-r-rstudio-windows-mac-woratana-ngarmtrakulchol**](https://www.linkedin.com/pulse/3-methods-update-r-rstudio-windows-mac-woratana-ngarmtrakulchol){.uri}
+-   <https://rfortherestofus.com/2020/09/how-to-update-rstudio-r-packages/>
+
+***Installing packages***
+
+-   [**https://r-coder.com/install-r-packages/**](https://r-coder.com/install-r-packages/){.uri}
+
+***R Markdown***
+
+-   [**https://rmarkdown.rstudio.com/lesson-1.html**](https://rmarkdown.rstudio.com/lesson-1.html){.uri}
+
+-   [**https://commonmark.org/help/tutorial/**](https://commonmark.org/help/tutorial/){.uri}
+
+-   <http://www.introductoryr.co.uk/Reproducibility/book/index.html>
+
+-   <https://bookdown.org/yihui/rmarkdown/>
+
+***Data Visualisation***
+
+-   [**https://www.data-to-viz.com/**](https://www.data-to-viz.com/)
+
+-   <https://clauswilke.com/dataviz/>
+
+-   <https://ggplot2tor.com/>
+
+-   <https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/>
+
+***Detailed Guides to R***
+
+-   <https://r4ds.had.co.nz/>
+
+-   <https://ourcodingclub.github.io/tutorials>

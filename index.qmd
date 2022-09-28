@@ -50,3 +50,5 @@ Data obtained with *rgbif*.
 Source: [Ong et al. 2021](https://onlinelibrary.wiley.com/doi/abs/10.1111/aec.13124)
 
 ## Tutorials
+
+-   [**Introduction to RMarkdown**](https://ongxinrui.github.io/website/rmarkdown101.html)
