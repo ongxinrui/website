@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About the Author",
+    "section": "",
+    "text": "Affiliation: Tropical Ecology and Entomology (TEE) Lab\n\nI’m a PhD candidate at the Asian School of the Environment in NTU. I have a huge fascination with insects, particularly dung beetles. I wasn’t much of a coder until I started my PhD. Through the course of my projects and as a teaching assistant, I’ve realized my newfound appreciation to coding and data visualization.\nAs a young researcher, I hope this website serves as an encouragement that you aren’t struggling alone in your own coding journeys.\n\n\n\nPhoto by Marx Yim"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Gallery",
+    "section": "",
+    "text": "Dung beetle-feeding trophic networks depicting dung beetle-dung interactions in a Singapore forest fragment\n\n\n\n\n\n\nData obtained from: Ong et al. 2020\nMap of GBIF insect species records from 2001 to 2020\n\nData obtained with rgbif.\nObserved taxonomic and functional metrics for dung beetle communities attracted to baited pitfall traps and flight interception traps across three habitat types in a Bornean rainforest\n\nSource: Ong et al. 2021"
+  },
+  {
+    "objectID": "index.html#tutorials",
+    "href": "index.html#tutorials",
+    "title": "Gallery",
+    "section": "Tutorials",
+    "text": "Tutorials"
+  }
+]

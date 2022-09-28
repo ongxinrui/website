@@ -1,0 +1,52 @@
+---
+title: "Gallery"
+---
+
+## DataViz
+
+**Dung beetle-feeding trophic networks depicting dung beetle-dung interactions in a Singapore forest fragment**
+
+```{r network, echo=FALSE, message=FALSE, warning=FALSE, fig.width = 7, fig.height = 8}
+library(r2d3)
+library(bipartite)
+library(purrr) 
+library(dplyr) 
+library(tidyr) 
+library(stringr)
+library(tibble)
+library(bipartiteD3)
+
+# Read data
+MR <- read.csv('data/matrix_MR.csv', header = T)
+
+# prepare data & plot
+SortSec <- c('Tiger','Tapir','Sun bear','Python','Sambar','Civet')
+ManualColours <- c(Tiger="#ff7f0e", Tapir="#393b79", 'Sun bear' ="#1f77b4", 
+                   Sambar = "#8c564b", Python="#7b4173", Civet="#bcbd22")
+
+colnames(MR)[1]<-"Dung"
+row.names(MR)<-MR$Dung
+MR <- MR %>% select(-Dung) %>% t  %>% as.matrix()
+
+bipartite_D3(MR, PrimaryLab = 'Dung Beetle',
+             SecondaryLab = 'Dung Type',
+             SortSecondary=SortSec, colouroption = 'manual',
+             NamedColourVector = ManualColours, ColourBy = 2,
+             Pad = 5)
+```
+
+Data obtained from: [Ong et al. 2020](https://onlinelibrary.wiley.com/doi/abs/10.1111/btp.12840)
+
+**Map of GBIF insect species records from 2001 to 2020**
+
+![](images/SEA_GBIF_map.jpg)
+
+Data obtained with *rgbif*.
+
+**Observed taxonomic and functional metrics for dung beetle communities attracted to baited pitfall traps and flight interception traps across three habitat types in a Bornean rainforest**
+
+![](images/complete_metrics_raw.jpg)
+
+Source: [Ong et al. 2021](https://onlinelibrary.wiley.com/doi/abs/10.1111/aec.13124)
+
+## Tutorials

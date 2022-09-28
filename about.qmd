@@ -1,0 +1,13 @@
+---
+title: "About the Author"
+---
+
+**Name:** [Xin Rui Ong](https://twitter.com/XinRuiOng)
+
+**Affiliation:** [Tropical Ecology and Entomology (TEE) Lab](https://teelabntu.wixsite.com/home)\
+
+I'm a PhD candidate at the Asian School of the Environment in NTU. I have a huge fascination with insects, particularly dung beetles. I wasn't much of a coder until I started my PhD. Through the course of my projects and as a teaching assistant, I've realized my newfound appreciation to coding and data visualization.
+
+As a young researcher, I hope this website serves as an encouragement that you aren't struggling alone in your own coding journeys.
+
+![Photo by Marx Yim](images/about.jpg)
