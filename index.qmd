@@ -1,5 +1,4 @@
 ---
-title: "Gallery"
 format:
   html:
     code-fold: true
@@ -275,7 +274,7 @@ Source: [Ong et al. 2021](https://onlinelibrary.wiley.com/doi/abs/10.1111/aec.13
 
 ## Tutorials
 
-These tutorials were created (or adapted from other teaching resources) for the **ES3307/7028 Experimental Design & Analysis for Ecology** course, taught by **Asst Prof Eleanor Slade**.
+These tutorials were created (or adapted from other teaching resources) for the **ES3307/7028 Experimental Design & Analysis for Ecology** course taught by **Asst Prof Eleanor Slade**.
 
 -   [**Introduction to RMarkdown**](https://ongxinrui.github.io/website/rmarkdown101.html)
 -   [**Power analysis**](https://ongxinrui.shinyapps.io/power_analysis/)
