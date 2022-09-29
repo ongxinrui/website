@@ -1,0 +1,351 @@
+x,latitude,longitude,name
+,1.346175008,103.960857,Jalan Pelatok Open Space
+,1.389904019,103.978979,Turnhouse Park
+,1.409913016,103.923131,Coney Island Park
+,1.379237005,103.866967,Stratton Walk Playground
+,1.372761003,103.829073,Leban Park
+,1.320710015,103.951754,Kew Drive Playground
+,1.34065899,103.955192,Harvey Crescent Playground
+,1.366937017,103.881611,Poh Huat Road Playground
+,1.390098002,103.834277,Lentor Street Playground
+,1.381099011,103.861151,Lilac Drive Playground
+,1.353350016,103.863473,Mei Hwan Drive Playground
+,1.360480011,103.866008,Chuan Green Playground
+,1.387856976,103.863388,Begonia Road Playground
+,1.38983501,103.837234,Fudu Walk Playground
+,1.390064987,103.838591,Countryside Playground
+,1.333849008,103.946938,Jalan Pari Burong Playground
+,1.371626001,103.832785,St. Nicholas View Playground
+,1.323023001,103.919179,Waringin Park Playground
+,1.345032012,103.884842,Tai Keng Place Playground
+,1.366028984,103.877504,Parry Road Playground
+,1.360425013,103.865669,Garden View Playground
+,1.369562983,103.892822,Jalan Naung Playground
+,1.388631003,103.838383,Lentor Walk Playground
+,1.361952005,103.966205,Mariam Way Playground
+,1.359547029,103.968547,Mariam Walk Playground
+,1.378692011,103.832623,Thomson Green Playground
+,1.355558014,103.884109,Surin Avenue Neighbourhood Park
+,1.348558987,103.862006,Chiltern Drive Interim Park
+,1.319187992,103.948586,Kew Crescent Playground
+,1.385285989,103.837056,Lentor Green Playground
+,1.383079989,103.866841,Nim Crescent Open Space
+,1.357585001,103.867454,Colchester Grove Open Space
+,1.370206987,103.865358,Tavistock Avenue Park
+,1.315599016,103.924306,Elite Terrace Park
+,1.385602002,103.873382,Jalan Selaseh Playground
+,1.35333802,103.880875,Jalan Geneng Interim Park
+,1.302445014,103.862996,Kampong Glam Park
+,1.350138,103.845965,Clover Way Playground
+,1.304896993,103.908132,Marine Parade Road Park
+,1.334434001,103.877337,Butterfly Avenue Playground
+,1.348953004,103.840365,Marymount Terrace Playground
+,1.342621999,103.863115,Carmichael Road Playground
+,1.334280003,103.765763,Greenridge Crescent Playground
+,1.362119006,103.833535,Fulton Avenue Playground
+,1.333437999,103.769989,Savoy Park Playground
+,1.334739008,103.767247,Eng Kong Place Fitness Corner
+,1.317551006,103.748696,Pandan Reservoir Fitness Corner
+,1.353198982,103.774033,Bukit Timah Nature Reserve
+,1.294938345,103.7928295,one-north Park: Mediapolis
+,1.33980401,103.71716,Lakeside Grove Fitness Corner
+,1.351771995,103.701048,Westwood Park Playground
+,1.370600005,103.764668,Cashew Road Playground
+,1.358640009,103.759016,Chu Yen Playground
+,1.355361008,103.761025,Hillview Crescent Playground
+,1.326788002,103.766406,Sunset Way Playground
+,1.336056618,103.731161,Jurong Lake Gardens
+,1.301002038,103.7906345,one-north Park: Fusionopolis North
+,1.308750999,103.76476,Taman Mas Merah Playground
+,1.371359006,103.768925,Cashew Link Playground
+,1.350204005,103.776007,Hindhede Nature Park
+,1.319766997,103.757976,Faber Hill Playground
+,1.33982702,103.760905,Burgundy Crescent Playground
+,1.360420016,103.760959,Lorong Kemunchup Playground
+,1.362712994,103.773908,Dairy Farm Nature Park
+,1.367634014,103.76883,Chestnut Drive Playground
+,1.327695,103.764779,Sunset Way Park
+,1.372285989,103.751977,Pavilion Park Playground
+,1.315559997,103.75636,West Coast Green Playground
+,1.360638981,103.758606,Jalan Dermawan Playground
+,1.305581227,103.7891622,one-north Park: Rochester East
+,1.338017009,103.707876,Jurong Central Park
+,1.322503996,103.757668,Faber Height Open Space
+,1.314253978,103.75845,West Coast Place Playground
+,1.354237007,103.698636,Westville Playground
+,1.38954898,103.751411,Villa Verde Park
+,1.347543998,103.765472,Bukit Batok Nature Park
+,1.369270011,103.773357,Chestnut Close Playground
+,1.399749013,103.805724,Upper Seletar Reservoir Park
+,1.40003199,103.818446,Thong Soon Green Playground
+,1.400870986,103.822384,Springleaf Avenue Playground
+,1.279877003,103.804834,The Southern Ridges
+,1.287617008,103.824027,Tiong Bahru Park
+,1.298934008,103.767617,Clementi Woods Park
+,1.308994994,103.762027,Jalan Mas Puteh Playground
+,1.296153299,103.763,West Coast Park
+,1.299613028,103.7907213,one-north Park: Fusionopolis South
+,1.372245015,103.769495,Cashew Crescent Fitness Corner Playground
+,1.357409008,103.768537,Fuyong Interim Park
+,1.389138992,103.748433,Choa Chu Kang Park
+,1.371635019,103.763645,Hazel Park Open Space
+,1.307808002,103.763606,Jalan Mas Kuning Playground
+,1.327945017,103.768868,Sunset Heights Open Space
+,1.373215009,103.771884,Almond Crescent Playground
+,1.375890034,103.75724,Phoenix Heights Playground
+,1.340072984,103.718594,Lakeside Grove Playground
+,1.3061131,103.7880294,one-north Park: Rochester West
+,1.337484986,103.692902,Yunnan Park
+,1.357360984,103.75607,Bukit Batok Town Park
+,1.357578001,103.760776,Jalan Remaja Interim Park
+,1.364073012,103.881278,Parry Avenue Interim Park
+,1.352767004,103.861743,Mei Hwan Crescent Playground
+,1.450638017,103.829489,Pebble Garden
+,1.444350989,103.733834,Kranji Nature Trail
+,1.461502986,103.836845,Sembawang Park
+,1.399447988,103.884326,Sengkang Riverside Park
+,1.405584127,103.822723,Brooks Park
+,1.410997022,103.904815,Punggol Waterway Park
+,1.42754499,103.826119,Platina Road Playground
+,1.401158977,103.8174687,Springleaf Nature Park
+,1.438805993,103.740057,Kranji Reservoir Park
+,1.456222013,103.835674,Kandis Garden
+,1.36002981,103.8269462,Windsor Nature Park
+,1.376939012,103.898646,Punggol Park
+,1.409974,103.832171,Lower Seletar Reservoir Park
+,1.398038984,103.822322,Springleaf Garden Playground
+,1.444170424,103.7820589,Admiralty Park
+,1.427596994,103.839487,Yishun Pond Park
+,1.41651199,103.759039,Jalan Rasok Park
+,1.427281004,103.825351,Goodlink Park Playground
+,1.424376002,103.84261,Yishun Park
+,1.369065012,103.826296,Lower Peirce Reservoir Park
+,1.402232999,103.915405,Punggol Waterway
+,1.437633018,103.769934,Marsiling Park
+,1.408689993,103.96542,Pulau Ubin and Chek Jawa
+,1.284353007,103.790319,Kent Ridge Park
+,1.214058333,103.8348056,Sisters’ Islands Marine Park
+,1.278845007,103.810545,Telok Blangah Hill Park
+,1.278630653,103.8014812,HortPark
+,1.284243997,103.851335,Raffles Place Park
+,1.286639004,103.846578,Hong Lim Park - Speakers' Corner
+,1.305734008,103.883301,Mount Batten Rd/Old Airport Rd Open Space
+,1.301571987,103.887304,Wilkinson Interim Park
+,1.340453023,103.884275,Bunga Rampai Park
+,1.298971001,103.847775,Handy Road Open Space
+,1.307304997,103.859533,Kitchener Green Playground
+,1.300096994,103.841238,Penang Road Open Space
+,1.312670009,103.813894,National Orchid Garden
+,1.336924017,103.769163,Eng Kong Garden Playground
+,1.318784989,103.939424,Sennett Avenue Open Space
+,1.32736399,103.914737,Interim Park At Lengkong Enam
+,1.324428004,103.953982,Pesari Walk Playground
+,1.362848014,103.972157,Changi Heights Playground
+,1.328995983,103.915658,Jalan Senang Playground
+,1.315365007,103.914286,Telok Kurau Park
+,1.386942983,103.8566,Sunrise Place Playground
+,1.381468003,103.86872,Seletar Terrace Playground
+,1.374509013,103.811353,Upper Peirce Reservoir Park
+,1.356359004,103.860395,Tai Hwan Terrace Playground
+,1.436523996,103.779226,Woodlands Town Park East
+,1.440211094,103.7354694,Sungei Buloh Wetland Reserve
+,1.389702008,103.860192,Tamarind Road Playground
+,1.452700003,103.780115,Woodlands Waterfront Park
+,1.372002011,103.83453,Ellington Square Playground
+,1.343887005,103.883247,Thrift Drive Open Space
+,1.390109003,103.852236,Cactus Road Playground
+,1.379920993,103.83456,Serenade Walk Playground
+,1.373476017,103.829858,Gelenggang Park
+,1.368981997,103.880039,Park Villas Terrace Playground
+,1.439358011,103.826964,Jalan Kemuning Park
+,1.38825799,103.856121,Sunrise Terrace Open Space
+,1.387012006,103.85751,Sunrise Close Playground
+,1.375997005,103.832499,Thomson Walk Playground
+,1.384262002,103.862974,Mimosa Road Playground
+,1.359630997,103.863872,Chartwell Drive Park
+,1.405671984,103.820607,Springside Park
+,1.386954014,103.835072,Florissa Park Playground
+,1.420227004,103.719891,Kranji Marshes
+,1.45754,103.836984,Janggus Garden
+,1.280437996,103.846119,Ann Siang Hill Park
+,1.281121993,103.841419,Duxton Plain Park
+,1.437621993,103.835077,Yishun Neighbourhood Park
+,1.315872975,103.931431,Tanah Puteh Park
+,1.333020981,103.94388,Jalan Pari Dedap Playground
+,1.323983001,103.946385,Jalan Limau Kasturi Playground
+,1.39926599,103.871065,Dew Garden
+,1.387661981,103.856752,Sunrise Way Playground
+,1.346781994,103.881825,Jalan Kelichap Playground
+,1.321632986,103.921577,Interim Park at Terang Bulan Avenue
+,1.339039003,103.958234,Sunbird Circle Playground
+,1.346094999,103.960344,Jalan Pelatok Playground
+,1.324284005,103.946228,Jalan Limau Kasturi Open Space
+,1.391794026,103.986344,Changi East Boardwalk
+,1.381991984,103.8292,Teacher's Estate Playground
+,1.310996001,103.923806,East Coast Terrace Park
+,1.311047991,103.816251,Singapore Botanic Gardens
+,1.265760987,103.803133,Labrador Nature Reserve
+,1.434169007,103.8226469,Sembawang Hot Spring Park
+,1.317013002,103.936212,Sennett Avenue Playground
+,1.319287002,103.941376,Lucky Gardens Playground
+,1.334335434,103.9208701,Bedok Town Park
+,1.38637898,103.838321,Lentor Grove Playground
+,1.310324992,103.912805,Telok Kurau Lorong N Park
+,1.38779799,103.868413,Dedap Place Playground
+,1.357221983,103.867553,Chuan Walk Playground
+,1.339094002,103.92681,Bedok Reservoir Park
+,1.347108987,103.867396,Jalan Riang Playground
+,1.390043988,103.975878,Changi West Boardwalk
+,1.335886008,103.771683,Cheng Soon Garden Playground
+,1.346138019,103.766776,Jalan Tekukor Playground
+,1.323298993,103.796581,Namly Park
+,1.324838011,103.842728,Novena Rise Park
+,1.312399003,103.843204,Hooper Road Playground
+,1.279206998,103.788954,Chwee Chian Playground
+,1.289417001,103.853597,Esplanade Park
+,1.361455989,103.847295,Bishan-Ang Mo Kio Park
+,1.303381003,103.888214,Arthur Park
+,1.304278005,103.790368,one-north Park: Biopolis
+,1.297175002,103.886367,Katong Park
+,1.298568993,103.894197,Meyer Road Playground
+,1.316152985,103.843852,Thomson Road Playground
+,1.320695493,103.8179182,Jacob Ballas Children's Garden
+,1.358270003,103.825161,Jupiter Road Playground
+,1.320361006,103.840699,Gentle Drive Playground
+,1.321132982,103.833174,Goldhill Avenue Playground
+,1.275698999,103.792076,Pasir Panjang Park
+,1.313650016,103.889369,Lorong 40 Geylang Playground
+,1.278177998,103.846687,Telok Ayer Park
+,1.329138016,103.879963,Aljunied Park
+,1.279026005,103.790185,Jambol Place Park
+,1.282380991,103.839541,Pearl's Hill City Park
+,1.33232501,103.878436,Oasis@Mulberry Park
+,1.306519,103.90074,Haig Walk
+,1.354035993,103.839945,Jalan Pintau Playground
+,1.314407999,103.901699,Joo Chiat Terrace Interim Park
+,1.335704011,103.801713,Orchid Village Playground
+,1.323103989,103.77326,Clementi Crescent Playground
+,1.353370004,103.84272,Pemimpin Place Playground
+,1.353646967,103.832028,Soo Chow Walk Playground
+,1.340515987,103.765984,Highgate Walk Playground
+,1.361998996,103.828439,Island Gardens Walk Playground
+,1.341522989,103.83359,MacRitchie Reservoir Park
+,1.290572001,103.864679,Marina Promenade
+,1.370571,103.850286,Ang Mo Kio Town Garden East
+,1.312482992,103.782779,Holland Grove View Fitness Corner
+,1.322436017,103.791281,Sixth Avenue Playground
+,1.292824997,103.854818,War Memorial Park
+,1.323805979,103.865835,Beng Wan Road Playground
+,1.316234998,103.783106,Henry Park
+,1.293089996,103.844915,River Valley Road / Clemenceau Avenue Open Space
+,1.374025014,103.842887,Ang Mo Kio Town Garden West
+,1.341395989,103.780895,Mayfair Park
+,1.31455099,103.892397,Guillemard Road Open Space
+,1.356556988,103.834035,Thomson Park Estate Interim Park
+,1.321207995,103.923838,Bangsawan Park
+,1.32311502,103.957616,Eastwood Park Playground
+,1.331702984,103.808987,Watten Heights Playground
+,1.313763009,103.784206,Grove Lane Playground
+,1.311502006,103.898952,Carpmael Road Open Space
+,1.301587003,103.837611,Orchard Fountain Corner
+,1.31173,103.795544,Holland Village Park
+,1.287320006,103.853473,Waterboat House Garden
+,1.308422003,103.854849,Rowell Road Open Space
+,1.288489996,103.860639,Youth Olympic Park
+,1.335506016,103.805487,Greenwood Crescent Playground
+,1.272364992,103.802693,Berlayer Creek
+,1.283845008,103.829977,Kim Pong Park
+,1.322312979,103.842813,Novena Park
+,1.336324018,103.764869,Golden Rise Playground
+,1.309758997,103.854776,Lembu Road Open Space
+,1.343862985,103.77304,Hoover Park
+,1.300174003,103.897322,Tanjong Katong Road South Playground
+,1.314115017,103.780246,Jalan Kebaya Playground
+,1.328344008,103.810509,Shelford Road Playground
+,1.322987012,103.827058,Malcolm Park
+,1.292257993,103.845691,The Foothills Fort Canning Park
+,1.333798002,103.881706,MacPherson Linear Park
+,1.290759993,103.831798,Ganges Avenue Open Space
+,1.331874009,103.875616,Chempaka Avenue Playground
+,1.321771988,103.887659,Geylang East Park
+,1.291778004,103.846609,Fort Canning Park
+,1.38340099,104.001675,Changi Beach Park
+,1.329746017,103.950168,Jalan Chempaka Kuning Playground
+,1.385943002,103.858758,Saraca Road Playground
+,1.383104999,103.86146,Mimosa Walk Playground
+,1.347404006,103.963506,Mera Terrace Playground
+,1.337183986,103.956225,Jalan Angin Laut Playground
+,1.39030102,103.855252,Sunrise Drive Playground 2
+,1.38829201,103.837572,Lentor Road Playground
+,1.378684022,103.952173,Pasir Ris Park
+,1.363039002,103.965637,Loyang View Playground
+,1.308482998,103.919384,Jalan Buloh Perindu Playground
+,1.329029004,103.946876,Tanah Merah Playground
+,1.379492003,103.875186,Luxus Hills Park
+,1.38725001,103.838826,Banyan Villas Playground
+,1.325003012,103.914402,Taman Kembangan Playground
+,1.324727987,103.949048,Jalan Limau Manis Playground
+,1.360928988,103.882129,Richards Avenue Park
+,1.399035028,103.873848,Lorong Tanggam Park
+,1.326716006,103.807658,Bougainvillea Park
+,1.32686098,103.782814,Holland Green Playground
+,1.304108993,103.862146,North Bridge Garden
+,1.299264003,103.843839,Istana Park
+,1.330579994,103.847968,Toa Payoh Town Park
+,1.292839996,103.834957,Kim Seng Park
+,1.315709015,103.781222,Mount Sinai Plain Playground
+,1.35429099,103.834364,Thomson Park
+,1.312950986,103.78123,Holland Grove View Playground
+,1.298343008,103.845882,Dhoby Ghaut Green
+,1.304497996,103.847462,Mount Emily Park
+,1.305787006,103.866979,Kallang Riverside Park
+,1.286823994,103.851957,Empress Place
+,1.275281008,103.818222,Mount Faber Park
+,1.303169006,103.920605,East Coast Park
+,1.322453001,103.950773,Limau Garden Playground
+,1.344383007,103.960283,Meragi Road Playground
+,1.367302019,103.889832,Realty Park Playground
+,1.371689995,103.952378,Pasir Ris Town Park
+,1.327417001,103.953082,Bedok Ria Crescent Playground
+,1.32202599,103.7964,Coronation Park Playground
+,1.361013983,103.830174,The Inglewood Playground
+,1.324289989,103.805479,Duchess Park
+,1.351061996,103.844622,Clover Crescent Playground
+,1.348673983,103.843548,Binchang Rise Playground
+,1.350155996,103.835175,Taman Permata Park
+,1.337011004,103.78506,Hua Guan Crescent Playground
+,1.377304974,103.805474,Central Catchment Nature Reserve
+,1.329720994,103.87305,Siang Kuang Avenue Interim Park
+,1.311484011,103.858152,Somme Road Playground
+,1.295716995,103.848861,Stamford Green
+,1.31911,103.806056,King's Drive  Playground
+,1.325451997,103.817666,University Road Park
+,1.322288011,103.788076,Greenleaf View Park Playground
+,1.370971567,103.7808374,Chestnut Nature Park
+,1.281465007,103.847644,Telok Ayer Green
+,1.372718013,103.839569,Mayflower Crescent Playground
+,1.388305972,103.85737,Sunrise Drive Playground 1
+,1.372190016,103.941094,Elias Terrace Playground
+,1.321627004,103.948451,Kew Avenue Playground
+,1.313034992,103.917656,Greenfield Drive Playground
+,1.359264023,103.944482,Sun Plaza Park
+,1.391226001,103.987296,Changi Point Ferry Terminal
+,1.371020982,103.832392,Shangri-La Playground
+,1.32010101,103.924456,Opera Estate Football Field
+,1.388054016,103.836146,Lentor Vale Playground
+,1.323851998,103.950395,Limau Villas Playground
+,1.348967012,103.883569,Paya Lebar Crescent Open Space
+,1.385445983,103.877906,Mugliston Park Playground
+,1.378732994,103.945667,Sungei Api Api Park
+,1.380681008,103.837487,Yio Chu Kang Gardens Playground
+,1.363914991,103.94869,Tampines Eco Green
+,1.384050001,103.86045,Mimosa Terrace Playground
+,1.385589014,103.865744,Neram Crescent Playground
+,1.390647001,103.988089,Changi Point Waterfront Park
+,1.319380003,103.927927,Aida Park
+,1.346071008,103.884998,Tai Keng Gardens Playground
+,1.367963662,103.8903645,Realty Park
+,1.390172013,103.98919,Changi Point Promenade
+,1.35519602,103.885955,Aroozoo Avenue Playground
+,1.391640001,103.903736,St. Anne's Wood Playground
+,1.325534002,103.94749,Bedok Terrace Playground

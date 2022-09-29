@@ -10,6 +10,8 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 
 ## DataViz
 
+### Networks
+
 **Dung beetle-feeding trophic networks depicting dung beetle-dung interactions in a Singapore forest fragment**
 
 ```{r network}
@@ -44,6 +46,40 @@ bipartite_D3(MR, PrimaryLab = 'Dung Beetle',
 ```
 
 Data obtained from: [Ong et al. 2020](https://onlinelibrary.wiley.com/doi/abs/10.1111/btp.12840)
+
+### Mapping 
+
+**Map of Singapore's parks and nature reserves**
+
+```{r leaflet}
+# Load packages
+library(tidyverse)
+library(crosstalk)
+library(leaflet)
+library(leaflet.extras2)
+library(shiny)
+
+# Read data
+parks <- read.csv("data/sg_parks.csv", header = T,
+                     fileEncoding = "UTF-8-BOM")
+shared_parks <- SharedData$new(parks)
+
+# Map with Leaflet & crosstalk
+bscols(widths = c(8, 4),
+  leaflet(parks) %>% 
+    addCircles(lng = ~longitude,
+               lat = ~latitude,
+               color = c("#0c6332"),
+               popup = paste(parks$name)) %>%
+    addProviderTiles(providers$Stamen.Watercolor),
+  list(filter_select("Name of Park/Nature Reserve",
+                     "Name of Park/Nature Reserve",
+                     shared_parks, ~name)
+  )
+)
+```
+
+Data obtained from [data.gov.sg](https://data.gov.sg/dataset/parks?resource_id=507ec5a8-ecc2-4fb7-bbc9-0374c523e10e)
 
 **Map of GBIF insect species records from the top 10 insect orders recorded in Southeast Asia from 2001 to 2020**
 
@@ -94,6 +130,8 @@ SEA_GBIF_map <- SEA_GBIF_top10 %>%
 ![](images/SEA_GBIF_map.jpg)
 
 Data obtained with *rgbif*.
+
+### Charts
 
 **Observed taxonomic and functional metrics for dung beetle communities attracted to baited pitfall traps and flight interception traps across three habitat types in a Bornean rainforest**
 
