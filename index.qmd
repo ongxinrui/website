@@ -18,24 +18,23 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 # Setup
 library(r2d3)
 library(bipartite)
-library(purrr) 
-library(dplyr) 
-library(tidyr) 
-library(stringr)
-library(tibble)
+library(tidyverse)
 library(bipartiteD3)
 
 # Read data
 MR <- read.csv('data/matrix_MR.csv', header = T)
 
-# Prepare data matrix and set colours
-SortSec <- c('Tiger','Tapir','Sun bear','Python','Sambar','Civet')
-ManualColours <- c(Tiger="#ff7f0e", Tapir="#393b79", 'Sun bear' ="#1f77b4", 
-                   Sambar = "#8c564b", Python="#7b4173", Civet="#bcbd22")
-
+# Prepare data matrix
 colnames(MR)[1]<-"Dung"
 row.names(MR)<-MR$Dung
 MR <- MR %>% select(-Dung) %>% t  %>% as.matrix()
+
+# Sort dung types
+SortSec <- c('Tiger','Tapir','Sun bear','Python','Sambar','Civet')
+
+# Set manual colours
+ManualColours <- c(Tiger="#ff7f0e", Tapir="#393b79", 'Sun bear' ="#1f77b4", 
+                   Sambar = "#8c564b", Python="#7b4173", Civet="#bcbd22")
 
 # Plot
 bipartite_D3(MR, PrimaryLab = 'Dung Beetle',
@@ -315,7 +314,5 @@ Source: [Ong et al. 2021](https://onlinelibrary.wiley.com/doi/abs/10.1111/aec.13
 These tutorials were created (or adapted from other teaching resources) for the **ES3307/7028 Experimental Design & Analysis for Ecology** course taught by **Asst Prof Eleanor Slade**.
 
 -   [**Introduction to RMarkdown**](https://ongxinrui.github.io/website/rmarkdown101.html)
--   [**Power analysis**](https://ongxinrui.shinyapps.io/power_analysis/)
--   [**GLMS for count data: Poisson errors**](https://ongxinrui.shinyapps.io/PracOrmePoisson/)
--   [**GLMS for proportion data: Binomial errors**](https://ongxinrui.shinyapps.io/PracOrmeBinom/)
+-   [**Power analysis**](https://ongxinrui.shinyapps.io/power_analysis/) [Adapted from Ruxton and Colegrave, Experimental Design for the Life Sciences (4th edition)]
 -   [**Using the Information Theoretic Approach (MuMIn package)**](https://ongxinrui.shinyapps.io/MuMIn-Computer-Tutorial/)
