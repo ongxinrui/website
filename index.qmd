@@ -316,3 +316,4 @@ These tutorials were created (or adapted from other teaching resources) for the 
 -   [**Introduction to RMarkdown**](https://ongxinrui.github.io/website/rmarkdown101.html)
 -   [**Power analysis**](https://ongxinrui.shinyapps.io/power_analysis/) [Adapted from Ruxton and Colegrave, Experimental Design for the Life Sciences (4th edition)]
 -   [**Using the Information Theoretic Approach (MuMIn package)**](https://ongxinrui.shinyapps.io/MuMIn-Computer-Tutorial/)
+-   [**Multivariate analysis**](https://ongxinrui.shinyapps.io/multivariate-analysis/)
